@@ -22,7 +22,7 @@ public class Explobomb : MonoBehaviour
             Player player = collider.GetComponent<Player>();
             if (player != null)
             {
-                player.Death();
+                GameManager.instance.HPLoss();
             }
         }
         
@@ -51,11 +51,10 @@ public class Explobomb : MonoBehaviour
 
     void OnCollisionEnter2D (Collision2D collider)
     {
-        if(collider.gameObject.tag == "Player")
+        if(collider.gameObject.CompareTag("Player"))
         {
             Player player = collider.gameObject.GetComponent<Player>();
-            player.Death();//Luego tiene que ser que pierda vida
-            Destroy(gameObject);
+            GameManager.instance.HPLoss();
         }
     }
 }
