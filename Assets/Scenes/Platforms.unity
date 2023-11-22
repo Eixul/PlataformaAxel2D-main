@@ -8138,6 +8138,17 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &568145281 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4874144148945881076, guid: e2fdd898d509a854eae37b5401e19391, type: 3}
+  m_PrefabInstance: {fileID: 1693098772}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8555b88e53340664c9c0649ea22c4f42, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &592877736
 GameObject:
   m_ObjectHideFlags: 3
@@ -8502,7 +8513,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 273912e85f5de3041ba3cb77344459f0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bgmMusic: {fileID: 8300000, guid: bcb584edfdf728145a171891e1bc8796, type: 3}
+  bgmMusic: {fileID: 8300000, guid: 0e495e184352399458b052e3e1ae80e2, type: 3}
 --- !u!82 &748948775
 AudioSource:
   m_ObjectHideFlags: 0
@@ -9425,6 +9436,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   vidas: 5
   hud: {fileID: 683937953}
+  val: 0
+  stur: {fileID: 568145281}
 --- !u!4 &1297411118
 Transform:
   m_ObjectHideFlags: 0

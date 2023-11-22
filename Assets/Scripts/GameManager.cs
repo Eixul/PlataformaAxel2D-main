@@ -14,6 +14,10 @@ public class GameManager : MonoBehaviour
     public int pointsTotal {get; private set;}
 
     private int hp = 3;
+
+    public int val = 0;
+
+    public StarCollect stur;
     
     // Start is called before the first frame update
     void Awake()
@@ -39,10 +43,21 @@ public class GameManager : MonoBehaviour
 
         if(hp == 0)
         {
-            SceneManager.LoadScene(1);
+            SceneManager.LoadScene(2);
         }
         
         hud.DesactivarVidas(hp);
 
+    }
+
+    public void WinnerScene()
+    {
+        val += 1;
+        
+        if(val == 1)
+        {
+            SceneManager.LoadScene(1);
+        }
+        
     }
 }

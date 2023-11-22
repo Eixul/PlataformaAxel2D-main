@@ -21,6 +21,7 @@ public class Player : MonoBehaviour
     private SpriteRenderer spriteRenderer;
     [SerializeField] private int health;
     [SerializeField] private int numDeVidas;
+    
 
     public SoundManager soundManager;
 

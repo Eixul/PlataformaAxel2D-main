@@ -7,6 +7,7 @@ public class StarCollect : MonoBehaviour
     BoxCollider2D _boxCollider;
     //SFXManager sfxManager;
     public int value;
+
     
     
     // Start is called before the first frame update
@@ -30,6 +31,7 @@ public class StarCollect : MonoBehaviour
         {
             Destroy(gameObject);
             Contador.instance.IncreaseStars(value);
+            GameManager.instance.WinnerScene();
         }
     }
 }
